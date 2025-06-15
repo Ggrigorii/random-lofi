@@ -2,31 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/random-lofi/assets/app-icon-87e5e8ea.png" />
+    <link rel="icon" type="image/png" href="./assets/app-icon-87e5e8ea.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Random lo-fi music</title>
-    <script type="module" crossorigin src="/random-lofi/assets/index-c4efe261.js"></script>
-    <link rel="stylesheet" href="/random-lofi/assets/index-eeed328d.css">
-  </head>
-  <body>
-    <div class="ca-label">CA: Nxaxm4KQeGUUKepucMt4Wzz9dZ4zFAa2FrnDvuRpump</div>
-    <div id="app"></div>
-    
+    <title>LoFi Engine</title>
     <style>
       .ca-label {
         position: fixed;
-        top: 0;
+        top: 24px;
         left: 0;
         width: 100vw;
         text-align: center;
-        font-size: 2rem;
+        font-size: 2.2rem;
         font-weight: bold;
-        z-index: 1000;
-        color: #000000;
-        pointer-events: none;
+        z-index: 200;
+        color: #fff;
+        text-shadow: 0 2px 8px #000, 0 0 2px #000, 0 0 8px #000;
         user-select: none;
-        margin-top: 100px;
+        letter-spacing: 1px;
+        pointer-events: none;
+      }
+      .ca-value {
+        background: rgba(0,0,0,0.45);
+        color: #fff;
+        padding: 2px 10px;
+        border-radius: 8px;
+        font-size: 1.2rem;
+        font-weight: normal;
+        margin-left: 8px;
+        user-select: text;
+        pointer-events: auto;
+        cursor: pointer;
+        box-shadow: 0 2px 8px #00000055;
+        transition: background 0.2s;
+      }
+      .ca-value:hover {
+        background: rgba(30,30,30,0.85);
       }
     </style>
+    <script type="module" crossorigin src="./assets/index-15e82330.js"></script>
+    <link rel="stylesheet" href="./assets/index-cb1df480.css">
+  </head>
+  <body>
+    <div class="ca-label">
+      CA: <span class="ca-value">Nxaxm4KQeGUUKepucMt4Wzz9dZ4zFAa2FrnDvuRpump</span>
+    </div>
+    <div id="app"></div>
+    
   </body>
 </html> 
