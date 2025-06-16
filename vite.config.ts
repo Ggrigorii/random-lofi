@@ -4,7 +4,7 @@ import sveltePreprocess from "svelte-preprocess";
 
 // https://vitejs.dev/config/
 export default defineConfig(async () => ({
-  base: "./",
+  base: "/",
   plugins: [
     svelte({
       preprocess: [
